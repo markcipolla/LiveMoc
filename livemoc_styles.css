@@ -1,0 +1,52 @@
+/*
+
+LiveMoc - Check specific page level tags to generate in-page, live documentation.
+by Mark Cipolla, http://www.markcipolla.com
+
+Version 0.1.0
+Full source at https://github.com/markcipolla/LiveDoc
+Copyright (c) 2012 Mark Cipolla
+
+MIT License, https://github.com/markcipolla/LiveDoc/blob/master/LICENSE.md
+
+*/
+
+#livemoc {
+  display: none;
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#livemoc h1 {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  background-color: #333;
+  display: block;
+  position: absolute;
+  left: -117px;
+  top: 210px;
+  width: 240px;
+  padding: 6px 10px;
+
+  -webkit-transform: rotate(90deg); 
+     -moz-transform: rotate(90deg); 
+      -ms-transform: rotate(90deg); 
+       -o-transform: rotate(90deg); 
+          transform: rotate(90deg);
+             filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+                     M11=6.123031769111886e-17, M12=-1, M21=1, M22=6.123031769111886e-17, sizingMethod='auto expand');
+               zoom: 1;
+}
+
+a.livemoc_clickable {
+  display: block;
+  background-color: red;
+  opacity: 0;
+}
